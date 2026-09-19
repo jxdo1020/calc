@@ -1,0 +1,20 @@
+{
+  "Main": {
+    "File": ["New", "Open Session", "Save Session"],
+    "Edit": ["Cut", "Copy", "Paste", "Clear All"],
+    "Action": {
+      "Transformation": ["simplify", "expand", "factor", "apart"],
+      "Calculation": ["differentiate", "integrate", "approximate"],
+      "Equation/Inequality": ["solve"],
+      "Complex": ["conjugate", "re", "im", "arg"],
+      "List": ["sum", "mean", "median"],
+      "Matrix": ["det", "transpose", "inverse"]
+    },
+    "Interactive": ["simplify", "expand", "factor", "apart", "solve", "differentiate", "integrate", "substitute", "approximate"]
+  },
+  "Graph & Table": {
+    "File": ["New"],
+    "Edit": ["Clear All"],
+    "G-Solve": ["Root", "Minimum", "Maximum", "Intersection", "Integral"]
+  }
+}
