@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-classpad"
+version = "0.1.0"
+description = "Independent ClassPad-style desktop mathematics environment"
+requires-python = ">=3.11"
+dependencies = ["sympy>=1.12,<2", "Pillow>=10,<12"]
+license = {file = "LICENSE"}
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyinstaller>=6"]
+
+[project.scripts]
+open-classpad = "classpad.app:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+include = ["classpad*"]
+
+[tool.setuptools.package-data]
+classpad = ["assets/*.json"]
